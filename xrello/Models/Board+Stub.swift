@@ -41,6 +41,12 @@ extension Board {
         ].map{ Card(content: $0, boardList: otherPrefectureBoardList.id) }
         otherPrefectureBoardList.cards = otherPrefectureCard
         
+        board.lists = [
+        prefectureBoardList,
+        visitedPrefectureBoardList,
+        otherPrefectureBoardList
+        ]
+        
         return board
     }
     
