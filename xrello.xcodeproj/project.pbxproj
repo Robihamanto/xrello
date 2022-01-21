@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44C873D279A874C0035613E /* xrelloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C873C279A874C0035613E /* xrelloApp.swift */; };
+		F44C873F279A874C0035613E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C873E279A874C0035613E /* ContentView.swift */; };
+		F44C8741279A874E0035613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8740279A874E0035613E /* Assets.xcassets */; };
+		F44C8744279A874F0035613E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8743279A874F0035613E /* Preview Assets.xcassets */; };
+		F44C874E279A874F0035613E /* xrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C874D279A874F0035613E /* xrelloTests.swift */; };
+		F44C8758279A874F0035613E /* xrelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8757279A874F0035613E /* xrelloUITests.swift */; };
+		F44C875A279A874F0035613E /* xrelloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44C874A279A874F0035613E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44C8731279A874C0035613E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44C8738279A874C0035613E;
+			remoteInfo = xrello;
+		};
+		F44C8754279A874F0035613E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44C8731279A874C0035613E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44C8738279A874C0035613E;
+			remoteInfo = xrello;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F44C8739279A874C0035613E /* xrello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44C873C279A874C0035613E /* xrelloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloApp.swift; sourceTree = "<group>"; };
+		F44C873E279A874C0035613E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F44C8740279A874E0035613E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F44C8743279A874F0035613E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F44C8749279A874F0035613E /* xrelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xrelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44C874D279A874F0035613E /* xrelloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloTests.swift; sourceTree = "<group>"; };
+		F44C8753279A874F0035613E /* xrelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xrelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44C8757279A874F0035613E /* xrelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITests.swift; sourceTree = "<group>"; };
+		F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44C8736279A874C0035613E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C8746279A874F0035613E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C8750279A874F0035613E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44C8730279A874C0035613E = {
+			isa = PBXGroup;
+			children = (
+				F44C873B279A874C0035613E /* xrello */,
+				F44C874C279A874F0035613E /* xrelloTests */,
+				F44C8756279A874F0035613E /* xrelloUITests */,
+				F44C873A279A874C0035613E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44C873A279A874C0035613E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44C8739279A874C0035613E /* xrello.app */,
+				F44C8749279A874F0035613E /* xrelloTests.xctest */,
+				F44C8753279A874F0035613E /* xrelloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44C873B279A874C0035613E /* xrello */ = {
+			isa = PBXGroup;
+			children = (
+				F44C873C279A874C0035613E /* xrelloApp.swift */,
+				F44C873E279A874C0035613E /* ContentView.swift */,
+				F44C8740279A874E0035613E /* Assets.xcassets */,
+				F44C8742279A874F0035613E /* Preview Content */,
+			);
+			path = xrello;
+			sourceTree = "<group>";
+		};
+		F44C8742279A874F0035613E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F44C8743279A874F0035613E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F44C874C279A874F0035613E /* xrelloTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44C874D279A874F0035613E /* xrelloTests.swift */,
+			);
+			path = xrelloTests;
+			sourceTree = "<group>";
+		};
+		F44C8756279A874F0035613E /* xrelloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F44C8757279A874F0035613E /* xrelloUITests.swift */,
+				F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */,
+			);
+			path = xrelloUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F44C8738279A874C0035613E /* xrello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44C875D279A874F0035613E /* Build configuration list for PBXNativeTarget "xrello" */;
+			buildPhases = (
+				F44C8735279A874C0035613E /* Sources */,
+				F44C8736279A874C0035613E /* Frameworks */,
+				F44C8737279A874C0035613E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xrello;
+			productName = xrello;
+			productReference = F44C8739279A874C0035613E /* xrello.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44C8748279A874F0035613E /* xrelloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44C8760279A874F0035613E /* Build configuration list for PBXNativeTarget "xrelloTests" */;
+			buildPhases = (
+				F44C8745279A874F0035613E /* Sources */,
+				F44C8746279A874F0035613E /* Frameworks */,
+				F44C8747279A874F0035613E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44C874B279A874F0035613E /* PBXTargetDependency */,
+			);
+			name = xrelloTests;
+			productName = xrelloTests;
+			productReference = F44C8749279A874F0035613E /* xrelloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F44C8752279A874F0035613E /* xrelloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44C8763279A874F0035613E /* Build configuration list for PBXNativeTarget "xrelloUITests" */;
+			buildPhases = (
+				F44C874F279A874F0035613E /* Sources */,
+				F44C8750279A874F0035613E /* Frameworks */,
+				F44C8751279A874F0035613E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44C8755279A874F0035613E /* PBXTargetDependency */,
+			);
+			name = xrelloUITests;
+			productName = xrelloUITests;
+			productReference = F44C8753279A874F0035613E /* xrelloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44C8731279A874C0035613E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F44C8738279A874C0035613E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F44C8748279A874F0035613E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F44C8738279A874C0035613E;
+					};
+					F44C8752279A874F0035613E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F44C8738279A874C0035613E;
+					};
+				};
+			};
+			buildConfigurationList = F44C8734279A874C0035613E /* Build configuration list for PBXProject "xrello" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44C8730279A874C0035613E;
+			productRefGroup = F44C873A279A874C0035613E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44C8738279A874C0035613E /* xrello */,
+				F44C8748279A874F0035613E /* xrelloTests */,
+				F44C8752279A874F0035613E /* xrelloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44C8737279A874C0035613E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44C8744279A874F0035613E /* Preview Assets.xcassets in Resources */,
+				F44C8741279A874E0035613E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C8747279A874F0035613E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C8751279A874F0035613E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44C8735279A874C0035613E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44C873F279A874C0035613E /* ContentView.swift in Sources */,
+				F44C873D279A874C0035613E /* xrelloApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C8745279A874F0035613E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44C874E279A874F0035613E /* xrelloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C874F279A874F0035613E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44C875A279A874F0035613E /* xrelloUITestsLaunchTests.swift in Sources */,
+				F44C8758279A874F0035613E /* xrelloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44C874B279A874F0035613E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44C8738279A874C0035613E /* xrello */;
+			targetProxy = F44C874A279A874F0035613E /* PBXContainerItemProxy */;
+		};
+		F44C8755279A874F0035613E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44C8738279A874C0035613E /* xrello */;
+			targetProxy = F44C8754279A874F0035613E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F44C875B279A874F0035613E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F44C875C279A874F0035613E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F44C875E279A874F0035613E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"xrello/Preview Content\"";
+				DEVELOPMENT_TEAM = CKURCPC7GF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.xrello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F44C875F279A874F0035613E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"xrello/Preview Content\"";
+				DEVELOPMENT_TEAM = CKURCPC7GF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.xrello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F44C8761279A874F0035613E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CKURCPC7GF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.xrelloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xrello.app/xrello";
+			};
+			name = Debug;
+		};
+		F44C8762279A874F0035613E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CKURCPC7GF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.xrelloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xrello.app/xrello";
+			};
+			name = Release;
+		};
+		F44C8764279A874F0035613E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CKURCPC7GF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.xrelloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xrello;
+			};
+			name = Debug;
+		};
+		F44C8765279A874F0035613E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CKURCPC7GF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.xrelloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xrello;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44C8734279A874C0035613E /* Build configuration list for PBXProject "xrello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44C875B279A874F0035613E /* Debug */,
+				F44C875C279A874F0035613E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44C875D279A874F0035613E /* Build configuration list for PBXNativeTarget "xrello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44C875E279A874F0035613E /* Debug */,
+				F44C875F279A874F0035613E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44C8760279A874F0035613E /* Build configuration list for PBXNativeTarget "xrelloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44C8761279A874F0035613E /* Debug */,
+				F44C8762279A874F0035613E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44C8763279A874F0035613E /* Build configuration list for PBXNativeTarget "xrelloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44C8764279A874F0035613E /* Debug */,
+				F44C8765279A874F0035613E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44C8731279A874C0035613E /* Project object */;
+}
