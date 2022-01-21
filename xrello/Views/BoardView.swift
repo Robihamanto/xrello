@@ -26,12 +26,17 @@ struct BoardView: View {
                     }
                     .padding()
                     .background(Color(.white).opacity(0.3))
+                    .frame(height: 30)
                     .cornerRadius(8)
                     .foregroundColor(.black)
                 }
             }
             .padding()
-            .background(Image("fuji_yama").resizable())
+            .background(
+                Image("fuji_yama")
+                    .resizable()
+                    .aspectRatio(.none, contentMode: .fill)
+            )
             .edgesIgnoringSafeArea(.horizontal)
             .edgesIgnoringSafeArea(.bottom)
             .navigationTitle(board.name)
