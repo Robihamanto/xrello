@@ -14,6 +14,10 @@
 		F44C874E279A874F0035613E /* xrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C874D279A874F0035613E /* xrelloTests.swift */; };
 		F44C8758279A874F0035613E /* xrelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8757279A874F0035613E /* xrelloUITests.swift */; };
 		F44C875A279A874F0035613E /* xrelloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */; };
+		F4D8036A279A893B00D6D370 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80369279A893B00D6D370 /* Card.swift */; };
+		F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036B279A89C600D6D370 /* BoardList.swift */; };
+		F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036D279A8A9B00D6D370 /* Board.swift */; };
+		F4D80371279A90A400D6D370 /* Board+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80370279A90A400D6D370 /* Board+Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		F44C8753279A874F0035613E /* xrelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xrelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44C8757279A874F0035613E /* xrelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITests.swift; sourceTree = "<group>"; };
 		F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4D80369279A893B00D6D370 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F4D8036B279A89C600D6D370 /* BoardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardList.swift; sourceTree = "<group>"; };
+		F4D8036D279A8A9B00D6D370 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		F4D8036F279A904600D6D370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F4D80370279A90A400D6D370 /* Board+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board+Stub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,8 @@
 		F44C873B279A874C0035613E /* xrello */ = {
 			isa = PBXGroup;
 			children = (
+				F4D8036F279A904600D6D370 /* Info.plist */,
+				F4D80368279A891F00D6D370 /* Models */,
 				F44C873C279A874C0035613E /* xrelloApp.swift */,
 				F44C873E279A874C0035613E /* ContentView.swift */,
 				F44C8740279A874E0035613E /* Assets.xcassets */,
@@ -125,6 +136,17 @@
 				F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */,
 			);
 			path = xrelloUITests;
+			sourceTree = "<group>";
+		};
+		F4D80368279A891F00D6D370 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4D80369279A893B00D6D370 /* Card.swift */,
+				F4D8036D279A8A9B00D6D370 /* Board.swift */,
+				F4D8036B279A89C600D6D370 /* BoardList.swift */,
+				F4D80370279A90A400D6D370 /* Board+Stub.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D80371279A90A400D6D370 /* Board+Stub.swift in Sources */,
 				F44C873F279A874C0035613E /* ContentView.swift in Sources */,
+				F4D8036A279A893B00D6D370 /* Card.swift in Sources */,
+				F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */,
+				F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */,
 				F44C873D279A874C0035613E /* xrelloApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +448,7 @@
 				DEVELOPMENT_TEAM = CKURCPC7GF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = xrello/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +478,7 @@
 				DEVELOPMENT_TEAM = CKURCPC7GF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = xrello/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
