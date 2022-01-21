@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F44C873D279A874C0035613E /* xrelloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C873C279A874C0035613E /* xrelloApp.swift */; };
-		F44C873F279A874C0035613E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C873E279A874C0035613E /* ContentView.swift */; };
 		F44C8741279A874E0035613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8740279A874E0035613E /* Assets.xcassets */; };
 		F44C8744279A874F0035613E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8743279A874F0035613E /* Preview Assets.xcassets */; };
 		F44C874E279A874F0035613E /* xrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C874D279A874F0035613E /* xrelloTests.swift */; };
@@ -18,6 +16,8 @@
 		F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036B279A89C600D6D370 /* BoardList.swift */; };
 		F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036D279A8A9B00D6D370 /* Board.swift */; };
 		F4D80371279A90A400D6D370 /* Board+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80370279A90A400D6D370 /* Board+Stub.swift */; };
+		F4D80374279A94FF00D6D370 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80373279A94FF00D6D370 /* BoardView.swift */; };
+		F4D80376279A95B600D6D370 /* xrelloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80375279A95B600D6D370 /* xrelloApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 
 /* Begin PBXFileReference section */
 		F44C8739279A874C0035613E /* xrello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrello.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F44C873C279A874C0035613E /* xrelloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloApp.swift; sourceTree = "<group>"; };
-		F44C873E279A874C0035613E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F44C8740279A874E0035613E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44C8743279A874F0035613E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F44C8749279A874F0035613E /* xrelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xrelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +51,8 @@
 		F4D8036D279A8A9B00D6D370 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		F4D8036F279A904600D6D370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F4D80370279A90A400D6D370 /* Board+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board+Stub.swift"; sourceTree = "<group>"; };
+		F4D80373279A94FF00D6D370 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		F4D80375279A95B600D6D370 /* xrelloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				F4D8036F279A904600D6D370 /* Info.plist */,
+				F4D80372279A94AE00D6D370 /* Views */,
 				F4D80368279A891F00D6D370 /* Models */,
-				F44C873C279A874C0035613E /* xrelloApp.swift */,
-				F44C873E279A874C0035613E /* ContentView.swift */,
 				F44C8740279A874E0035613E /* Assets.xcassets */,
 				F44C8742279A874F0035613E /* Preview Content */,
+				F4D80375279A95B600D6D370 /* xrelloApp.swift */,
 			);
 			path = xrello;
 			sourceTree = "<group>";
@@ -147,6 +147,14 @@
 				F4D80370279A90A400D6D370 /* Board+Stub.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F4D80372279A94AE00D6D370 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4D80373279A94FF00D6D370 /* BoardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D80371279A90A400D6D370 /* Board+Stub.swift in Sources */,
-				F44C873F279A874C0035613E /* ContentView.swift in Sources */,
 				F4D8036A279A893B00D6D370 /* Card.swift in Sources */,
+				F4D80374279A94FF00D6D370 /* BoardView.swift in Sources */,
+				F4D80376279A95B600D6D370 /* xrelloApp.swift in Sources */,
 				F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */,
 				F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */,
-				F44C873D279A874C0035613E /* xrelloApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
