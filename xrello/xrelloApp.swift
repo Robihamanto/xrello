@@ -11,7 +11,7 @@ import SwiftUI
 struct xrelloApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BoardView()
         }
     }
 }
