@@ -40,6 +40,7 @@ struct BoardListView: View {
                 .lineLimit(2)
             Spacer()
             Menu {
+                Button("Edit") { editBoardName() }
                 Button("Delete", role: .destructive) {}
             } label: {
                 Image(systemName: "ellipsis.circle")
@@ -53,7 +54,9 @@ struct BoardListView: View {
         List {
             ForEach(boardList.cards) { card in
                 CardItemView(boardList: boardList, card: card)
+                    .onDrag{ NSItemProvider(object: card) }
             }
+            .onMove(perform: boardList.moveCard(fromOffsets:toOffset:))
             .listRowSeparator(.hidden)
             .listRowInsets(.init(top: 4, leading: 8, bottom: 4, trailing: 8))
             .listRowBackground(Color.clear)
