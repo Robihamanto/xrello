@@ -53,7 +53,7 @@ struct BoardListView: View {
                 CardItemView(boardList: boardList, card: card)
             }
             .listRowSeparator(.hidden)
-            .listRowInsets(.init(top: 8, leading: 4, bottom: 4, trailing: 8))
+            .listRowInsets(.init(top: 4, leading: 8, bottom: 4, trailing: 8))
             .listRowBackground(Color.clear)
         }
     }
