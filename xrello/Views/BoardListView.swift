@@ -19,9 +19,7 @@ struct BoardListView: View {
             listView
                 .listStyle(.plain)
             
-            Button("+ Add Card") {
-                
-            }
+            Button("+ Add Card") {}
             .padding(.horizontal)
             .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -39,12 +37,8 @@ struct BoardListView: View {
                 .lineLimit(2)
             Spacer()
             Menu {
-                Button("Rename") {
-                    
-                }
-                Button("Delete", role: .destructive) {
-                    
-                }
+                Button("Rename") {}
+                Button("Delete", role: .destructive) {}
             } label: {
                 Image(systemName: "ellipsis.circle")
                     .imageScale(.large)
@@ -56,7 +50,7 @@ struct BoardListView: View {
     private var listView: some View {
         List {
             ForEach(boardList.cards) { card in
-                Text(card.content)
+                CardItemView()
             }
             .listRowSeparator(.hidden)
             .listRowInsets(.init(top: 8, leading: 4, bottom: 4, trailing: 8))

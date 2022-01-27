@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41FC66127A271C9005F7A69 /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FC66027A271C9005F7A69 /* CardItemView.swift */; };
 		F44C8741279A874E0035613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8740279A874E0035613E /* Assets.xcassets */; };
 		F44C8744279A874F0035613E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8743279A874F0035613E /* Preview Assets.xcassets */; };
 		F44C874E279A874F0035613E /* xrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C874D279A874F0035613E /* xrelloTests.swift */; };
 		F44C8758279A874F0035613E /* xrelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8757279A874F0035613E /* xrelloUITests.swift */; };
 		F44C875A279A874F0035613E /* xrelloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */; };
 		F48BF8A627A24A46008E6B20 /* BoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BF8A527A24A46008E6B20 /* BoardListView.swift */; };
-		F48BF8AA27A26E60008E6B20 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BF8A927A26E60008E6B20 /* CardView.swift */; };
 		F4D8036A279A893B00D6D370 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80369279A893B00D6D370 /* Card.swift */; };
 		F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036B279A89C600D6D370 /* BoardList.swift */; };
 		F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036D279A8A9B00D6D370 /* Board.swift */; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41FC66027A271C9005F7A69 /* CardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemView.swift; sourceTree = "<group>"; };
 		F44C8739279A874C0035613E /* xrello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44C8740279A874E0035613E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44C8743279A874F0035613E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		F44C8757279A874F0035613E /* xrelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITests.swift; sourceTree = "<group>"; };
 		F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F48BF8A527A24A46008E6B20 /* BoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListView.swift; sourceTree = "<group>"; };
-		F48BF8A927A26E60008E6B20 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F4D80369279A893B00D6D370 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F4D8036B279A89C600D6D370 /* BoardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardList.swift; sourceTree = "<group>"; };
 		F4D8036D279A8A9B00D6D370 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			children = (
 				F4D80373279A94FF00D6D370 /* BoardView.swift */,
 				F48BF8A527A24A46008E6B20 /* BoardListView.swift */,
-				F48BF8A927A26E60008E6B20 /* CardView.swift */,
+				F41FC66027A271C9005F7A69 /* CardItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,12 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D80371279A90A400D6D370 /* Board+Stub.swift in Sources */,
+				F41FC66127A271C9005F7A69 /* CardItemView.swift in Sources */,
 				F4D8036A279A893B00D6D370 /* Card.swift in Sources */,
 				F4D80374279A94FF00D6D370 /* BoardView.swift in Sources */,
 				F4D80376279A95B600D6D370 /* xrelloApp.swift in Sources */,
 				F48BF8A627A24A46008E6B20 /* BoardListView.swift in Sources */,
 				F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */,
-				F48BF8AA27A26E60008E6B20 /* CardView.swift in Sources */,
 				F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
