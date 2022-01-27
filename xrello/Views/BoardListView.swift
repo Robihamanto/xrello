@@ -22,7 +22,7 @@ struct BoardListView: View {
                 .listStyle(.plain)
                 .frame(maxHeight: listHeight)
             
-            Button("+ Add Card") {}
+            Button("+ Add Card") { addCardItem() }
             .padding(.horizontal)
             .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -35,7 +35,7 @@ struct BoardListView: View {
     
     private var headerView: some View {
         HStack {
-            Text(board.name)
+            Text(boardList.name)
                 .font(.headline)
                 .lineLimit(2)
             Spacer()
@@ -64,6 +64,12 @@ struct BoardListView: View {
         }
     }
     
+    private func addCardItem() {
+        presentAlertTextField(title: "Add new item to \(boardList.name)") { text in
+            guard let text = text, !text.isEmpty else { return }
+            boardList.addNewCard(with: text)
+        }
+    }
     
 }
 
