@@ -10,24 +10,24 @@ import Foundation
 class Card: NSObject, ObservableObject, Identifiable, Codable {
     
     private(set) var id = UUID()
-    var boardList: UUID
+    var boardListID: UUID
     
     @Published var content: String
     
     enum CodingKeys: String, CodingKey {
-    case id, content, boardList
+    case id, content, boardListID
     }
     
     init(content: String, boardList: UUID) {
         self.content = content
-        self.boardList = boardList
+        self.boardListID = boardList
         super.init()
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(UUID.self, forKey: .id)
-        self.boardList = try container.decode(UUID.self, forKey: .boardList)
+        self.boardListID = try container.decode(UUID.self, forKey: .boardListID)
         self.content = try container.decode(String.self, forKey: .content)
         super.init()
     }
@@ -35,7 +35,7 @@ class Card: NSObject, ObservableObject, Identifiable, Codable {
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(id, forKey: .id)
-        try container.encode(boardList, forKey: .boardList)
+        try container.encode(boardListID, forKey: .boardListID)
         try container.encode(content, forKey: .content)
     }
     
