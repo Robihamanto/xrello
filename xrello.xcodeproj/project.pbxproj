@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F41FC66127A271C9005F7A69 /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FC66027A271C9005F7A69 /* CardItemView.swift */; };
 		F41FC66427A274CA005F7A69 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F41FC66327A274CA005F7A69 /* Introspect */; };
+		F41FC66827A27AA7005F7A69 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FC66727A27AA7005F7A69 /* View+Extension.swift */; };
 		F44C8741279A874E0035613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8740279A874E0035613E /* Assets.xcassets */; };
 		F44C8744279A874F0035613E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8743279A874F0035613E /* Preview Assets.xcassets */; };
 		F44C874E279A874F0035613E /* xrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C874D279A874F0035613E /* xrelloTests.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		F41FC66027A271C9005F7A69 /* CardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemView.swift; sourceTree = "<group>"; };
+		F41FC66727A27AA7005F7A69 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		F44C8739279A874C0035613E /* xrello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44C8740279A874E0035613E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44C8743279A874F0035613E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -86,6 +88,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41FC66527A27A73005F7A69 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F41FC66627A27A89005F7A69 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F41FC66627A27A89005F7A69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F41FC66727A27AA7005F7A69 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F44C8730279A874C0035613E = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +127,12 @@
 		F44C873B279A874C0035613E /* xrello */ = {
 			isa = PBXGroup;
 			children = (
-				F4D8036F279A904600D6D370 /* Info.plist */,
-				F4D80372279A94AE00D6D370 /* Views */,
-				F4D80368279A891F00D6D370 /* Models */,
 				F44C8740279A874E0035613E /* Assets.xcassets */,
+				F4D8036F279A904600D6D370 /* Info.plist */,
+				F4D80368279A891F00D6D370 /* Models */,
 				F44C8742279A874F0035613E /* Preview Content */,
+				F41FC66527A27A73005F7A69 /* Utils */,
+				F4D80372279A94AE00D6D370 /* Views */,
 				F4D80375279A95B600D6D370 /* xrelloApp.swift */,
 			);
 			path = xrello;
@@ -308,6 +327,7 @@
 				F4D80376279A95B600D6D370 /* xrelloApp.swift in Sources */,
 				F48BF8A627A24A46008E6B20 /* BoardListView.swift in Sources */,
 				F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */,
+				F41FC66827A27AA7005F7A69 /* View+Extension.swift in Sources */,
 				F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
