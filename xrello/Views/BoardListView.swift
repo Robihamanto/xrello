@@ -40,7 +40,7 @@ struct BoardListView: View {
                 .lineLimit(2)
             Spacer()
             Menu {
-                Button("Edit") { editBoardName() }
+                Button("Edit") { editBoardListName() }
                 Button("Delete", role: .destructive) {}
             } label: {
                 Image(systemName: "ellipsis.circle")
@@ -56,6 +56,7 @@ struct BoardListView: View {
                 CardItemView(boardList: boardList, card: card)
                     .onDrag{ NSItemProvider(object: card) }
             }
+            .onInsert(of: [Card.typeIdentifier], perform: onInsertCard(index:itemProviders:))
             .onMove(perform: boardList.moveCard(fromOffsets:toOffset:))
             .listRowSeparator(.hidden)
             .listRowInsets(.init(top: 4, leading: 8, bottom: 4, trailing: 8))
@@ -63,6 +64,24 @@ struct BoardListView: View {
             .introspectTableView {
                 listHeight = $0.contentSize.height
             }
+        }
+    }
+    
+    private func onInsertCard(index: Int, itemProviders: [NSItemProvider]) {
+        for itemProvider in itemProviders {
+            itemProvider.loadObject(ofClass: Card.self) { item, _ in
+                guard let card = item as? Card else { return }
+                DispatchQueue.main.async {
+                    board.move(card: card, to: boardList, at: index)
+                }
+            }
+        }
+    }
+    
+    private func editBoardListName() {
+        presentAlertTextField(title: "Edit board name", defaultTextFieldText: boardList.name) { text in
+            guard let text = text, !text.isEmpty else { return }
+            boardList.name = text
         }
     }
     
