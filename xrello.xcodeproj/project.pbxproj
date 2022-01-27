@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F41FC66127A271C9005F7A69 /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FC66027A271C9005F7A69 /* CardItemView.swift */; };
+		F41FC66427A274CA005F7A69 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F41FC66327A274CA005F7A69 /* Introspect */; };
 		F44C8741279A874E0035613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8740279A874E0035613E /* Assets.xcassets */; };
 		F44C8744279A874F0035613E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44C8743279A874F0035613E /* Preview Assets.xcassets */; };
 		F44C874E279A874F0035613E /* xrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C874D279A874F0035613E /* xrelloTests.swift */; };
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41FC66427A274CA005F7A69 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +181,9 @@
 			dependencies = (
 			);
 			name = xrello;
+			packageProductDependencies = (
+				F41FC66327A274CA005F7A69 /* Introspect */,
+			);
 			productName = xrello;
 			productReference = F44C8739279A874C0035613E /* xrello.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +256,9 @@
 				Base,
 			);
 			mainGroup = F44C8730279A874C0035613E;
+			packageReferences = (
+				F41FC66227A274CA005F7A69 /* XCRemoteSwiftPackageReference "SwiftUI-introspect" */,
+			);
 			productRefGroup = F44C873A279A874C0035613E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -629,6 +637,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F41FC66227A274CA005F7A69 /* XCRemoteSwiftPackageReference "SwiftUI-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-introspect";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F41FC66327A274CA005F7A69 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41FC66227A274CA005F7A69 /* XCRemoteSwiftPackageReference "SwiftUI-introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F44C8731279A874C0035613E /* Project object */;
 }
