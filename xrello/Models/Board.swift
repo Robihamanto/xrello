@@ -39,4 +39,24 @@ class Board: NSObject, ObservableObject, Identifiable, Codable {
         try container.encode(lists, forKey: .lists)
     }
     
+    func move(card: Card, to boardList: BoardList, at index: Int) {
+        guard
+            let sourceBoardListIndex = boardListIndex(id: card.boardListID),
+            let destinationBoardListIndex = boardListIndex(id: boardList.id),
+            sourceBoardListIndex != destinationBoardListIndex
+        else { return }
+        
+        card.boardListID = boardList.id
+        boardList.cards.insert(card, at: index)
+        lists[sourceBoardListIndex].removeCard(with: card.id)
+    }
+    
+    private func cardIndexInBoardList(id: UUID, boardListIndex: Int) -> Int? {
+        lists[boardListIndex].cardIndex(id: id)
+    }
+    
+    private func boardListIndex(id: UUID) -> Int? {
+        lists.firstIndex { $0.id == id }
+    }
+    
 }
