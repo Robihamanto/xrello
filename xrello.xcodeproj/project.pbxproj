@@ -13,6 +13,7 @@
 		F44C8758279A874F0035613E /* xrelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8757279A874F0035613E /* xrelloUITests.swift */; };
 		F44C875A279A874F0035613E /* xrelloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */; };
 		F48BF8A627A24A46008E6B20 /* BoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BF8A527A24A46008E6B20 /* BoardListView.swift */; };
+		F48BF8AA27A26E60008E6B20 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BF8A927A26E60008E6B20 /* CardView.swift */; };
 		F4D8036A279A893B00D6D370 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80369279A893B00D6D370 /* Card.swift */; };
 		F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036B279A89C600D6D370 /* BoardList.swift */; };
 		F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036D279A8A9B00D6D370 /* Board.swift */; };
@@ -48,6 +49,7 @@
 		F44C8757279A874F0035613E /* xrelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITests.swift; sourceTree = "<group>"; };
 		F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F48BF8A527A24A46008E6B20 /* BoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListView.swift; sourceTree = "<group>"; };
+		F48BF8A927A26E60008E6B20 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F4D80369279A893B00D6D370 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F4D8036B279A89C600D6D370 /* BoardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardList.swift; sourceTree = "<group>"; };
 		F4D8036D279A8A9B00D6D370 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				F4D80373279A94FF00D6D370 /* BoardView.swift */,
 				F48BF8A527A24A46008E6B20 /* BoardListView.swift */,
+				F48BF8A927A26E60008E6B20 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				F4D80376279A95B600D6D370 /* xrelloApp.swift in Sources */,
 				F48BF8A627A24A46008E6B20 /* BoardListView.swift in Sources */,
 				F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */,
+				F48BF8AA27A26E60008E6B20 /* CardView.swift in Sources */,
 				F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
