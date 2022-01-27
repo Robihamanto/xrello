@@ -64,6 +64,24 @@ extension BoardList: NSItemProviderWriting {
         return nil
     }
     
+    func cardIndex(id: UUID) -> Int? {
+        cards.firstIndex { $0.id == id }
+    }
+    
+    func addNewCard(with content: String) {
+        cards.append(Card(content: content, boardList: id))
+    }
+    
+    func removeCard(with cardID: UUID) {
+        guard let cardIndex = cardIndex(id: cardID) else { return }
+        cards.remove(at: cardIndex)
+    }
+    
+    
+    func moveCard(fromOffsets offsets: IndexSet, toOffset offset: Int) {
+        cards.move(fromOffsets: offsets, toOffset: offset)
+    }
+    
 }
 
 extension BoardList: NSItemProviderReading {
