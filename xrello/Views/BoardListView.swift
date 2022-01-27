@@ -40,7 +40,6 @@ struct BoardListView: View {
                 .lineLimit(2)
             Spacer()
             Menu {
-                Button("Rename") {}
                 Button("Delete", role: .destructive) {}
             } label: {
                 Image(systemName: "ellipsis.circle")
