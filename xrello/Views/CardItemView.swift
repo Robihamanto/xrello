@@ -17,7 +17,7 @@ struct CardItemView: View {
             Text(card.content)
             Spacer()
             Menu {
-                Button("Rename") { editCard() }
+                Button("Edit") { editCard() }
                 Button("Delete", role: .destructive) { boardList.removeCard(with: card.id) }
             } label: {
                 Image(systemName: "ellipsis.rectangle")
@@ -34,7 +34,7 @@ struct CardItemView: View {
     private func editCard() {
         presentAlertTextField(title: "Edit item", defaultTextFieldText: card.content) { text in
             guard let text = text, !text.isEmpty else { return }
-            boardList.addNewCard(with: text)
+            card.content = text
         }
     }
     
