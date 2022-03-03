@@ -22,7 +22,7 @@ struct BoardView: View {
                         BoardListView(board: board, boardList: boardList)
                     }
                     Button("+ Add Lists") {
-                        
+                        addNewBoardList()
                     }
                     .padding()
                     .background(Color(.white).opacity(0.3))
@@ -44,6 +44,15 @@ struct BoardView: View {
         }
         .navigationViewStyle(.stack)
     }
+    
+    private func addNewBoardList() {
+        presentAlertTextField(title: "Add list") { text in
+            guard let name = text, !name.isEmpty else { return }
+            board.addNewBoardListWithName(name)
+        }
+    }
+    
+    
 }
 
 struct BoardView_Previews: PreviewProvider {

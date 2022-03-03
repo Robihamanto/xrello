@@ -59,4 +59,13 @@ class Board: NSObject, ObservableObject, Identifiable, Codable {
         lists.firstIndex { $0.id == id }
     }
     
+    func addNewBoardListWithName(_ name: String) {
+        lists.append(BoardList(name: name, boardID: id))
+    }
+    
+    func removeBoardList(_ boardList: BoardList) {
+        guard let index = boardListIndex(id: boardList.id) else { return }
+        lists.remove(at: index)
+    }
+    
 }
