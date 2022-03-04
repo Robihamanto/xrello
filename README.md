@@ -1,6 +1,6 @@
 Xrello
 ===================
-<img src="./Preview/pesenin.png" alt="alt text" width="160px" height="160px">
+<img src="./preview/icon.png" alt="alt text" width="160px" height="160px">
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
@@ -21,16 +21,22 @@ open Xrello.workspace # or xed .
 
 ## 👨🏻‍💻 Pesenin Design
   <p float="left">
-    <img src="./Preview/xrello_landscape_1.png" width="20%"/>
-    <img src="./Preview/xrello_landscape_2.png" width="18%"/> 
-    <img src="./Preview/xrello_landscape_3.png" width="18%"/> 
+    <img src="./preview/xrello_landscape_1.png" width="15%"/>
+    <img src="./preview/xrello_landscape_2.png" width="15%"/> 
+    <img src="./preview/xrello_landscape_3.png" width="15%"/> 
+  </p>
+  <p float="left">
+    <img src="./preview/xrello_landscape_1.png" width="100%"/>
   </p>
   
   <p float="left">
-    <img src="./Preview/xrello_portrait_1.png" width="20%"/>
-    <img src="./Preview/xrello_portrait_2.png" width="18%"/> 
-    <img src="./Preview/xrello_portrait_3.png" width="18%"/> 
+    <img src="./preview/xrello_portrait_1.png" width="15%"/>
+    <img src="./preview/xrello_portrait_2.png" width="15%"/> 
+    <img src="./preview/xrello_portrait_13.png" width="15%"/> 
   </p>
+  <p float="left">
+    <img src="./preview/xrello_portrait_1.png" width="40%"/>
+  </p>  
 
 Feature: 
 - Add BoardList
@@ -48,4 +54,4 @@ Feature:
 
 
 ## 📱 Preview
-<img src="./Preview/Xrello_preview.gif" alt="alt text" width="188px" height="408px">
+<img src="./preview/Xrello_preview.gif" alt="alt text">
