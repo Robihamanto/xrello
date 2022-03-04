@@ -12,7 +12,7 @@ let boardListBackgroundColor = Color(uiColor: UIColor(red: 0.92, green: 0.92, bl
 
 struct BoardView: View {
     
-    @StateObject private var board = Board.stub
+    @StateObject private var board = BoardLocalRepository.loadBoardData() ?? Board.stub
     @State private var dragging: BoardList?
     
     var body: some View {
@@ -55,6 +55,9 @@ struct BoardView: View {
             }
         }
         .navigationViewStyle(.stack)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+            BoardLocalRepository.saveData(board: board)
+        }
     }
     
     private func addNewBoardList() {
