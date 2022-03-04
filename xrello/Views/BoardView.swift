@@ -13,6 +13,7 @@ let boardListBackgroundColor = Color(uiColor: UIColor(red: 0.92, green: 0.92, bl
 struct BoardView: View {
     
     @StateObject private var board = Board.stub
+    @State private var dragging: BoardList?
     
     var body: some View {
         NavigationView {
@@ -20,6 +21,11 @@ struct BoardView: View {
                 LazyHStack(alignment: .top, spacing: 24) {
                     ForEach(board.lists) { boardList in
                         BoardListView(board: board, boardList: boardList)
+                            .onDrag({
+                                self.dragging = boardList
+                                return NSItemProvider(object: boardList)
+                            })
+                            .onDrop(of: [Card.typeIdentifier, BoardList.typeIdentifier], delegate: BoardDropDelegate(board: board, boardList: boardList, lists: $board.lists, current: $dragging))
                     }
                     Button("+ Add Lists") {
                         addNewBoardList()
