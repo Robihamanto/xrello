@@ -36,8 +36,6 @@ extension Board {
         let otherPrefectureCard = [
             "Kanagawa",
             "Hyogo",
-            "Kyoto",
-            "Saitama",
         ].map{ Card(content: $0, boardList: otherPrefectureBoardList.id) }
         otherPrefectureBoardList.cards = otherPrefectureCard
         
