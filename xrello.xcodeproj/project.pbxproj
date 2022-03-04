@@ -17,6 +17,7 @@
 		F44C875A279A874F0035613E /* xrelloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */; };
 		F48BF8A627A24A46008E6B20 /* BoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BF8A527A24A46008E6B20 /* BoardListView.swift */; };
 		F4D2552127D1A8D7008D5C40 /* BoardDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2552027D1A8D7008D5C40 /* BoardDropDelegate.swift */; };
+		F4D2552427D1AE85008D5C40 /* BoardLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2552327D1AE85008D5C40 /* BoardLocalRepository.swift */; };
 		F4D8036A279A893B00D6D370 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D80369279A893B00D6D370 /* Card.swift */; };
 		F4D8036C279A89C600D6D370 /* BoardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036B279A89C600D6D370 /* BoardList.swift */; };
 		F4D8036E279A8A9B00D6D370 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8036D279A8A9B00D6D370 /* Board.swift */; };
@@ -55,6 +56,7 @@
 		F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xrelloUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F48BF8A527A24A46008E6B20 /* BoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListView.swift; sourceTree = "<group>"; };
 		F4D2552027D1A8D7008D5C40 /* BoardDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDropDelegate.swift; sourceTree = "<group>"; };
+		F4D2552327D1AE85008D5C40 /* BoardLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardLocalRepository.swift; sourceTree = "<group>"; };
 		F4D80369279A893B00D6D370 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F4D8036B279A89C600D6D370 /* BoardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardList.swift; sourceTree = "<group>"; };
 		F4D8036D279A8A9B00D6D370 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				F4D8036F279A904600D6D370 /* Info.plist */,
 				F4D80368279A891F00D6D370 /* Models */,
 				F44C8742279A874F0035613E /* Preview Content */,
+				F4D2552227D1AE65008D5C40 /* Repository */,
 				F41FC66527A27A73005F7A69 /* Utils */,
 				F4D80372279A94AE00D6D370 /* Views */,
 				F4D80375279A95B600D6D370 /* xrelloApp.swift */,
@@ -163,6 +166,14 @@
 				F44C8759279A874F0035613E /* xrelloUITestsLaunchTests.swift */,
 			);
 			path = xrelloUITests;
+			sourceTree = "<group>";
+		};
+		F4D2552227D1AE65008D5C40 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F4D2552327D1AE85008D5C40 /* BoardLocalRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		F4D80368279A891F00D6D370 /* Models */ = {
@@ -324,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D2552127D1A8D7008D5C40 /* BoardDropDelegate.swift in Sources */,
+				F4D2552427D1AE85008D5C40 /* BoardLocalRepository.swift in Sources */,
 				F4D80371279A90A400D6D370 /* Board+Stub.swift in Sources */,
 				F41FC66127A271C9005F7A69 /* CardItemView.swift in Sources */,
 				F4D8036A279A893B00D6D370 /* Card.swift in Sources */,
