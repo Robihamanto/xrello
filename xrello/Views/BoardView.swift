@@ -30,8 +30,9 @@ struct BoardView: View {
                     .cornerRadius(8)
                     .foregroundColor(.black)
                 }
+                .padding()
+                .animation(.default, value: board.lists)
             }
-            .padding()
             .background(
                 Image("fuji_yama")
                     .resizable()
