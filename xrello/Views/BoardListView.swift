@@ -40,8 +40,12 @@ struct BoardListView: View {
                 .lineLimit(2)
             Spacer()
             Menu {
-                Button("Edit") { editBoardListName() }
-                Button("Delete", role: .destructive) {}
+                Button("Edit") {
+                    editBoardListName()
+                }
+                Button("Delete", role: .destructive) {
+                    removeBoardList()
+                }
             } label: {
                 Image(systemName: "ellipsis.circle")
                     .imageScale(.large)
@@ -83,6 +87,10 @@ struct BoardListView: View {
             guard let text = text, !text.isEmpty else { return }
             boardList.name = text
         }
+    }
+    
+    private func removeBoardList() {
+        board.removeBoardList(self.boardList)
     }
     
     private func addCardItem() {
