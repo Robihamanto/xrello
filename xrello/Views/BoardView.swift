@@ -14,6 +14,7 @@ struct BoardView: View {
     
     @StateObject private var board = BoardLocalRepository.loadBoardData() ?? Board.stub
     @State private var dragging: BoardList?
+    @State private var urlImage = ""
     
     var body: some View {
         NavigationView {
@@ -40,21 +41,46 @@ struct BoardView: View {
                 .animation(.default, value: board.lists)
             }
             .background(
-                Image("fuji_yama")
-                    .resizable()
-                    .aspectRatio(.none, contentMode: .fill)
+                ZStack {
+                    Image("fuji_yama")
+                        .resizable()
+                        .aspectRatio(.none, contentMode: .fill)
+                    
+                    AsyncImage(
+                        url: URL(string: urlImage)) { image in
+                            image
+                                .resizable()
+                        } placeholder: {
+                        EmptyView()
+                        }
+                    
+                }
             )
             .edgesIgnoringSafeArea(.horizontal)
             .edgesIgnoringSafeArea(.bottom)
             .navigationTitle(board.name)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button("Rename") {
-                    renameBoard()
+                Button() { renameBoard() } label: {
+                    Label("Rename", systemImage: "pencil.circle")
                 }
             }
         }
         .navigationViewStyle(.stack)
+        .safeAreaInset(edge: .bottom, alignment: .trailing, content: {
+            Button {
+                generateRandomBackgroundImage()
+            } label: {
+                Label("Random Background", systemImage: "wand.and.stars")
+            }
+            .padding()
+            .background(Color(.white).opacity(0.75))
+            .foregroundColor(.black)
+            .frame(height: 50)
+            .cornerRadius(8)
+            .offset(x: -8, y: 0)
+            
+        })
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             BoardLocalRepository.saveData(board: board)
         }
@@ -71,6 +97,16 @@ struct BoardView: View {
         presentAlertTextField(title: "Rename Board", defaultTextFieldText: board.name) { text in
             guard let name = text, !name.isEmpty else { return }
             board.name = name
+        }
+    }
+    
+    private func generateRandomBackgroundImage() {
+        presentAlertTextField(title: "Generate Background", message: "Input any words to get random image from Unsplash", defaultTextFieldText: "tokyo") { text in
+            guard
+                let query = text,
+                !query.isEmpty
+            else { return }
+            urlImage = "https://source.unsplash.com/random/?" + query
         }
     }
     
