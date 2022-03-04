@@ -48,6 +48,11 @@ struct BoardView: View {
             .edgesIgnoringSafeArea(.bottom)
             .navigationTitle(board.name)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button("Rename") {
+                    renameBoard()
+                }
+            }
         }
         .navigationViewStyle(.stack)
     }
@@ -56,6 +61,13 @@ struct BoardView: View {
         presentAlertTextField(title: "Add list") { text in
             guard let name = text, !name.isEmpty else { return }
             board.addNewBoardListWithName(name)
+        }
+    }
+    
+    private func renameBoard() {
+        presentAlertTextField(title: "Rename Board", defaultTextFieldText: board.name) { text in
+            guard let name = text, !name.isEmpty else { return }
+            board.name = name
         }
     }
     
