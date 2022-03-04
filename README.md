@@ -21,19 +21,15 @@ open Xrello.workspace # or xed .
 
 ## 👨🏻‍💻 Pesenin Design
   <p float="left">
-    <img src="./Preview/pesenin-menu-list-scene-light.png" width="20%"/>
-    <img src="./Preview/pesenin-menu-detail-scene-light.png" width="18%"/> 
-    <img src="./Preview/pesenin-favourite-scene-light.png" width="18%"/> 
-    <img src="./Preview/pesenin-order-scene-light.png" width="18%"/> 
-    <img src="./Preview/pesenin-checkout-scene-light.png" width="18%"/> 
+    <img src="./Preview/xrello_landscape_1.png" width="20%"/>
+    <img src="./Preview/xrello_landscape_2.png" width="18%"/> 
+    <img src="./Preview/xrello_landscape_3.png" width="18%"/> 
   </p>
   
   <p float="left">
-    <img src="./Preview/pesenin-menu-list-scene-dark.png" width="20%"/>
-    <img src="./Preview/pesenin-menu-detail-scene-dark.png" width="18%"/> 
-    <img src="./Preview/pesenin-favourite-scene-dark.png" width="18%"/> 
-    <img src="./Preview/pesenin-order-scene-dark.png" width="18%"/> 
-    <img src="./Preview/pesenin-checkout-scene-dark.png" width="18%"/> 
+    <img src="./Preview/xrello_portrait_1.png" width="20%"/>
+    <img src="./Preview/xrello_portrait_2.png" width="18%"/> 
+    <img src="./Preview/xrello_portrait_3.png" width="18%"/> 
   </p>
 
 Feature: 
@@ -52,4 +48,4 @@ Feature:
 
 
 ## 📱 Preview
-<img src="./Preview/talents.gif" alt="alt text" width="188px" height="408px">
+<img src="./Preview/Xrello_preview.gif" alt="alt text" width="188px" height="408px">
