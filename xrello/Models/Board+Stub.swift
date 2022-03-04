@@ -10,7 +10,7 @@ import Foundation
 extension Board {
     
     static var stub: Board {
-        let board = Board(name: "Japanese Things 🇯🇵")
+        let board = Board(name: "Japanese Prefecture 🇯🇵")
         let prefectureBoardList = BoardList(name: "Prefecture / 県", boardID: board.id)
         let prefectureCard = [
             "Tokyo",
