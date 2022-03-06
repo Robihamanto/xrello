@@ -36,6 +36,7 @@ Feature:
 - Reorder Item Card
 - Move Card Between BoardList
 - CRUD on CARD Item
+- Change random image from Unsplash
 
 
 ## 🎉 Why I am building this?
