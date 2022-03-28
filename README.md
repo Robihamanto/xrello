@@ -19,7 +19,7 @@ open Xrello.workspace # or xed .
 - Run (⌘ + R)
 ```
 
-## 👨🏻‍💻 Pesenin Design
+## 👨🏻‍💻 Xrello Design
   <p float="left">
     <img src="./preview/xrello_landscape_1.png" width="15%"/>
     <img src="./preview/xrello_landscape_2.png" width="15%"/> 
